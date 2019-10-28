@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include trtcmbevds_integration *.css
+recursive-include trtcmbevds_integration *.csv
+recursive-include trtcmbevds_integration *.html
+recursive-include trtcmbevds_integration *.ico
+recursive-include trtcmbevds_integration *.js
+recursive-include trtcmbevds_integration *.json
+recursive-include trtcmbevds_integration *.md
+recursive-include trtcmbevds_integration *.png
+recursive-include trtcmbevds_integration *.py
+recursive-include trtcmbevds_integration *.svg
+recursive-include trtcmbevds_integration *.txt
+recursive-exclude trtcmbevds_integration *.pyc
