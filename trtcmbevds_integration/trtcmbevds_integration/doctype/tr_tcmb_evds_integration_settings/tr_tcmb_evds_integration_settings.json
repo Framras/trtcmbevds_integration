@@ -1,0 +1,71 @@
+{
+  "creation": "2019-10-29 02:22:33.599654",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "enable",
+    "evds_section",
+    "key",
+    "column_break_4",
+    "server",
+    "contenttype"
+  ],
+  "fields": [
+    {
+      "default": "0",
+      "fieldname": "enable",
+      "fieldtype": "Check",
+      "label": "Enable"
+    },
+    {
+      "fieldname": "evds_section",
+      "fieldtype": "Section Break",
+      "label": "EVDS Settings"
+    },
+    {
+      "fieldname": "key",
+      "fieldtype": "Data",
+      "label": "Key"
+    },
+    {
+      "fieldname": "column_break_4",
+      "fieldtype": "Column Break"
+    },
+    {
+      "default": "https://evds2.tcmb.gov.tr",
+      "fieldname": "server",
+      "fieldtype": "Data",
+      "label": "Server Setting",
+      "read_only": 1
+    },
+    {
+      "default": "application/json;charset=UTF-8",
+      "fieldname": "contenttype",
+      "fieldtype": "Data",
+      "label": "Content-Type",
+      "read_only": 1
+    }
+  ],
+  "issingle": 1,
+  "modified": "2019-10-29 02:22:33.599654",
+  "modified_by": "Administrator",
+  "module": "Trtcmbevds Integration",
+  "name": "TR TCMB EVDS Integration Settings",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "print": 1,
+      "read": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "track_changes": 1
+}
