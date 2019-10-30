@@ -6,10 +6,8 @@
   "field_order": [
     "enable",
     "evds_section",
-    "key",
-    "column_break_4",
     "server",
-    "contenttype"
+    "type"
   ],
   "fields": [
     {
@@ -24,31 +22,20 @@
       "label": "EVDS Settings"
     },
     {
-      "fieldname": "key",
-      "fieldtype": "Data",
-      "label": "Key"
-    },
-    {
-      "fieldname": "column_break_4",
-      "fieldtype": "Column Break"
-    },
-    {
       "default": "https://evds2.tcmb.gov.tr",
       "fieldname": "server",
       "fieldtype": "Data",
-      "label": "Server Setting",
-      "read_only": 1
+      "label": "Server Setting"
     },
     {
       "default": "application/json;charset=UTF-8",
-      "fieldname": "contenttype",
+      "fieldname": "type",
       "fieldtype": "Data",
-      "label": "Content-Type",
-      "read_only": 1
+      "label": "Type"
     }
   ],
   "issingle": 1,
-  "modified": "2019-10-29 02:22:33.599654",
+  "modified": "2019-10-30 22:46:39.971567",
   "modified_by": "Administrator",
   "module": "Trtcmbevds Integration",
   "name": "TR TCMB EVDS Integration Settings",
@@ -63,6 +50,13 @@
       "role": "System Manager",
       "share": 1,
       "write": 1
+    },
+    {
+      "email": 1,
+      "print": 1,
+      "read": 1,
+      "role": "All",
+      "share": 1
     }
   ],
   "sort_field": "modified",
