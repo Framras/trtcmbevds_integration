@@ -4,7 +4,7 @@ import json
 
 
 @frappe.whitelist()
-def test_evdsintegration(testtoken):
+def test_integration(testtoken):
     url = frappe.db.get_single_value("TR TCMB EVDS Integration Settings", "server")
     servicepath = "/service/evds/"
     servicetype = "serieList/"

@@ -8,7 +8,7 @@ frappe.ui.form.on('TR TCMB EVDS Company Settings', {
 		test_integration: function(frm){
 	    if(frm.doc.key!=""){
 	        frappe.call({
-	            method: "trtcmbevds_integration.api.test_evdsintegration",
+	            method: "trtcmbevds_integration.api.test_integration",
 	            args:{
 	                testtoken: frm.doc.key
 	            },
