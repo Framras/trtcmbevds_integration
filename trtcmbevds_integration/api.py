@@ -1,5 +1,6 @@
 import frappe
-import urllib.request
+from urllib.request import Request, urlopen
+from urllib.error import URLError, HTTPError
 import json
 
 
@@ -16,7 +17,12 @@ def test_integration(testtoken):
 
     requesturl = url + servicepath + servicetype + servicedata
 
-    req = urllib.request.Request(requesturl)
-    response = urllib.request.urlopen(req)
-    with response as f:
-        return f.read().decode('utf-8')
+    req = Request(requesturl)
+    try:
+        response = urlopen(req)
+        with response as f:
+            return f.read().decode('utf-8')
+    except HTTPError as e:
+        return 'The server couldn\'t fulfill the request. ' + 'Error code: ' + str(e.code)
+    except URLError as e:
+        return 'We failed to reach a server. ' + 'Reason: ' + e.reason
